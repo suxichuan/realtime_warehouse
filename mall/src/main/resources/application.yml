@@ -1,0 +1,29 @@
+mock.date: "2020-12-18"
+mock.type: "log"
+
+mock.url: "http://node01/applog"
+
+mock:
+  kafka-server: "node01:9092"
+  kafka-topic: "ODS_BASE_LOG"
+
+
+mock.startup.count: 1000
+
+mock.max.mid: 20
+mock.max.uid: 50
+mock.max.sku-id: 10
+mock.page.during-time-ms: 20000
+mock.error.rate: 3
+mock.log.sleep: 100
+mock.detail.source-type-rate: "40:25:15:20"
+
+mock.if_get_coupon_rate: 75
+
+mock.max.coupon-id: 3
+
+mock.search.keyword: "图书,小米,iphone11,电视,口红,ps5,苹果手机,小米盒子,《精灵宝钻》"
+
+
+server:
+  port: 8888
