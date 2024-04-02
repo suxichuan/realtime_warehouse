@@ -1,0 +1,22 @@
+mybatis:
+  mapper-locations: classpath:mapper/*.xml #类目录下的mapper文件夹下的所有
+  type-aliases-package: com.zbw.domain  #实体类全路径的别名
+
+# 默认是8080端口 , 配置为80端口在浏览器访问时不需要输入端口号
+server:
+  port: 9090
+
+spring:
+  # 用户名 密码 需要根据实际情况修改
+  datasource:
+    driverClassName: ru.yandex.clickhouse.ClickHouseDriver #jdbc的连接驱动
+    password: 123456
+    url: jdbc:clickhouse://hadoop2022:8123/default
+    username: default
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+  resources:
+    chain:
+      cache: true
